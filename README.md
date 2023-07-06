@@ -1,2 +1,91 @@
-# resnet50_flowers_102
-Transfer learning using a pretrained resnet50 on the oxford flowers 102 dataset (fellowship ai cv challenge)
+## ResNet50 on Oxford Flowers-102
+---
+
+## Contributors
+
+1) [Aditya Jadhav](https://github.com/iamjadhav)
+M.Eng Robotics, University of Maryland.
+
+## Overview
+
+A pre-trained ResNet50 is used for classification of 102 flower classes from the Oxford Flowers-102 dataset.
+
+## License 
+
+```
+MIT License
+
+Copyright (c) 2023 Aditya Jadhav
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE 
+SOFTWARE.
+```
+
+## Demos and Overviews
+
+Phase-1 Demo:
+
+- [Phase-1](https://youtu.be/lwNjuT5e-FM)
+
+Phase-2 Output Demo:
+
+- [Phase-2](https://www.youtube.com/watch?v=CXsixNbqTj8)
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/35925489/138687478-1459cc24-4aad-42cc-9227-612790c5da71.gif)
+
+Phase-2 Final Overview:
+
+- [Phase-2 Overview](https://youtu.be/G9Qp9nsc6AY)
+
+## Set of Assumptions 
+
+- Humans are assumed to be in upright position.
+- The average human height is assumed to be 175 cms (1.75 meters).
+- Assumed Pin Hole camera model and Perspective Transform.
+- Humans need to be present in the frame before the detection starts for better results.
+
+## Known Issues/Bugs 
+
+- Human Detection is not highly efficient; Unnecessary bounding boxes are drawn for detections other than humans.
+- Humans in an abnormal pose are not being detected.
+- Lighting Conditions need to be favourable for good detection.
+- Humans in upright positions are detected.
+
+## Dependencies
+
+- PyTorch computer vision libraries with other libraries mentioned in the notebook
+
+## To Run the notebook
+
+Arrange directory structure as given below (if using Google Colab or Jupyter Notebook)
+```
+/<mounted_drive_path>/data/flowers-102
+```
+Uncomment the following line in cell 7 if running the notebook for the very first time
+```
+# # create_trn_val_tst_dirs()
+```
+Similarly, uncomment the move() lines in cell 11 to move images into class directories
+then run the notebook normally
+```
+# move(train_dir)
+```
+## Links
+
+Video --> [Link](https://www.google.com/)
+
