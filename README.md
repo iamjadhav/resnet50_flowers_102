@@ -35,37 +35,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE 
 SOFTWARE.
 ```
-
-## Demos and Overviews
-
-Phase-1 Demo:
-
-- [Phase-1](https://youtu.be/lwNjuT5e-FM)
-
-Phase-2 Output Demo:
-
-- [Phase-2](https://www.youtube.com/watch?v=CXsixNbqTj8)
-
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/35925489/138687478-1459cc24-4aad-42cc-9227-612790c5da71.gif)
-
-Phase-2 Final Overview:
-
-- [Phase-2 Overview](https://youtu.be/G9Qp9nsc6AY)
-
-## Set of Assumptions 
-
-- Humans are assumed to be in upright position.
-- The average human height is assumed to be 175 cms (1.75 meters).
-- Assumed Pin Hole camera model and Perspective Transform.
-- Humans need to be present in the frame before the detection starts for better results.
-
-## Known Issues/Bugs 
-
-- Human Detection is not highly efficient; Unnecessary bounding boxes are drawn for detections other than humans.
-- Humans in an abnormal pose are not being detected.
-- Lighting Conditions need to be favourable for good detection.
-- Humans in upright positions are detected.
-
 ## Dependencies
 
 - PyTorch computer vision libraries with other libraries mentioned in the notebook
